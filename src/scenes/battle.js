@@ -221,6 +221,7 @@ export default class Battle extends PIXI.Container {
 
                     if ( player.hp <= 0 ) {
                         this.gameServer.settle();
+
                         this.gameServer.endGame();
                     }
                 }

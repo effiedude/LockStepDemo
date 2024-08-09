@@ -38,7 +38,7 @@ export function velocityDecomposition(velocity, angle) {
 }
 
 /**
- * 将弧度换算成角度
+ * 将角度换算成弧度
  */
 export function convertDegree2Radian(deg) {
     return deg * Math.PI / 180;

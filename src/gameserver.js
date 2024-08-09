@@ -375,7 +375,7 @@ class GameServer {
         databus.matchPattern = true;
 
         this.event.emit("createRoom");
-        
+
         this.event.emit("onRoomInfoChange", {
             memberList: [
                 { headimg: avatarUrl, nickname: nickName },
@@ -408,7 +408,7 @@ class GameServer {
             accessInfo: this.accessInfo
         }).then((res) => {
             if ( res.errCode === 0 ) this.clear();
-                
+
             callback && callback(res);
         });
     }
